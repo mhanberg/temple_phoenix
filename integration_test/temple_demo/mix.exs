@@ -44,7 +44,7 @@ defmodule TempleDemo.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:wallaby, "~> 0.29.1", only: :test},
       {:tzdata, "~> 1.0.3"},
-      {:temple, github: "mhanberg/temple", branch: "mh/eex-enginify"}
+      {:temple_phoenix, path: "../../"},
     ]
   end
 

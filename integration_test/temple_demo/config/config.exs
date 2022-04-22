@@ -12,7 +12,7 @@ config :elixir, :time_zone_database, Tzdata.TimeZoneDatabase
 config :temple_demo,
   ecto_repos: [TempleDemo.Repo]
 
-config :phoenix, :template_engines, exs: Temple.Engine
+config :phoenix, :template_engines, exs: Temple.Phoenix.Engine
 
 # Configures the endpoint
 config :temple_demo, TempleDemoWeb.Endpoint,
