@@ -5,9 +5,12 @@ defmodule Temple.Phoenix.MixProject do
     [
       app: :temple_phoenix,
       version: "0.1.0-rc.0",
+      description: "Phoenix integratoin for Temple",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      source_url: "https://github.com/mhanberg/temple_phoenix"
     ]
   end
 
@@ -26,6 +29,18 @@ defmodule Temple.Phoenix.MixProject do
 
       # docs
       {:ex_doc, "~> 0.28.3", only: :dev, runtime: false}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Mitchell Hanberg"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/mhanberg/temple_phoenix",
+        "Temple" => "https://github.com/mhanberg/temple"
+      },
+      files: ~w(lib priv CHANGELOG.md LICENSE mix.exs README.md .formatter.exs)
     ]
   end
 end
