@@ -25,7 +25,7 @@ defmodule Temple.Phoenix.MixProject do
   defp deps do
     [
       {:temple, "~> 0.9.0-rc.0"},
-      {:phoenix, "~> 1.6", optional: true},
+      {:phoenix_view, "~> 1.0", optional: true},
 
       # docs
       {:ex_doc, "~> 0.28.3", only: :dev, runtime: false}
