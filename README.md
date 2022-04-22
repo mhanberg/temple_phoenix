@@ -1,21 +1,59 @@
-# TemplePhoenix
+# Temple.Phoenix
 
-**TODO: Add description**
+[Phoenix](https://github.com/phoenixframework/phoenix) integration for [Temple](https://github.com/mhanberg/temple).
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `temple_phoenix` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:temple_phoenix, "~> 0.1.0"}
+    {:temple_phoenix, "~> 0.1.0-rc.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/temple_phoenix>.
+<!-- MDOC !-->
 
+This package provides
+
+- Phoenix template engine for Phoenix views and co-located LiveView templates.
+
+## Phoenix template engine
+
+The Temple.Phoenix.Engine module makes it possible to use Temple with Phoenix controllers and LiveViews.
+
+To get started, you will configure Phoenix to use this module for `.exs` files and configure Temple to
+use the appropriate EEx engine..
+
+```elixir
+# config.exs
+config :phoenix, :template_engines,
+  # this will work for files named like `index.html.exs`
+  exs: Temple.Phoenix.Engine
+
+config :temple,
+  engine: Phoenix.HTML.Engine # or Phoenix.LiveView.Engine
+
+# config/dev.exs
+config :your_app, YourAppWeb.Endpoint,
+  live_reload: [
+    patterns: [
+      ~r"lib/myapp_web/(live|views)/.*(ex|exs)$",
+      ~r"lib/myapp_web/templates/.*(eex|exs)$"
+    ]
+  ]
+
+# my_app/
+#   lib/
+#     my_app/
+#     my_app_web/
+#       templates/
+#         posts/
+#           show.html.exs
+#       live/
+#         posts_live/
+#           show.ex
+#           show.html.exs
+```
+
+Now you can get started by writing `exs` files in the templates directory and they will be compiled as you would expect.
