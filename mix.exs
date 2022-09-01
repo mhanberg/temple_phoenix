@@ -4,8 +4,8 @@ defmodule Temple.Phoenix.MixProject do
   def project do
     [
       app: :temple_phoenix,
-      version: "0.1.0-rc.0",
-      description: "Phoenix integratoin for Temple",
+      version: "0.1.0",
+      description: "Phoenix integration for Temple",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -24,7 +24,7 @@ defmodule Temple.Phoenix.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:temple, "~> 0.9.0-rc.0"},
+      {:temple, "~> 0.9.0"},
       {:phoenix_view, "~> 1.0", optional: true},
 
       # docs

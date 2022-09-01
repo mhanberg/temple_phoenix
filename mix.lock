@@ -6,5 +6,5 @@
   "makeup_erlang": {:hex, :makeup_erlang, "0.1.1", "3fcb7f09eb9d98dc4d208f49cc955a34218fc41ff6b84df7c75b3e6e533cc65f", [:mix], [{:makeup, "~> 1.0", [hex: :makeup, repo: "hexpm", optional: false]}], "hexpm", "174d0809e98a4ef0b3309256cbf97101c6ec01c4ab0b23e926a9e17df2077cbb"},
   "nimble_parsec": {:hex, :nimble_parsec, "1.2.3", "244836e6e3f1200c7f30cb56733fd808744eca61fd182f731eac4af635cc6d0b", [:mix], [], "hexpm", "c8d789e39b9131acf7b99291e93dae60ab48ef14a7ee9d58c6964f59efb570b0"},
   "phoenix_view": {:hex, :phoenix_view, "1.1.2", "1b82764a065fb41051637872c7bd07ed2fdb6f5c3bd89684d4dca6e10115c95a", [:mix], [{:phoenix_html, "~> 2.14.2 or ~> 3.0", [hex: :phoenix_html, repo: "hexpm", optional: true]}], "hexpm", "7ae90ad27b09091266f6adbb61e1d2516a7c3d7062c6789d46a7554ec40f3a56"},
-  "temple": {:hex, :temple, "0.9.0-rc.0", "2905f5e645b052c1e51c7a12437529c30fe197b634e001b2a6f2ac3c9feaf8ef", [:mix], [], "hexpm", "5e49780a227ec739905c6428f9144bbdfc2e45a8ca7b648dd8c12bc97331a92e"},
+  "temple": {:hex, :temple, "0.9.0", "0937637463cbd8033eda89a2c12896c4b3a448efd77e13cb0f7e9231b7905aee", [:mix], [], "hexpm", "878808c84fb84d87df7bc87a7e0f4debec75bc4c2386db28f40b2fb6684c3da9"},
 }
