@@ -24,7 +24,7 @@ defmodule Temple.Phoenix.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:temple, "~> 0.9.0"},
+      {:temple, "~> 0.9"},
       {:phoenix_view, "~> 1.0", optional: true},
 
       # docs
