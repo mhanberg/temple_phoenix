@@ -7,7 +7,7 @@
 ```elixir
 def deps do
   [
-    {:temple_phoenix, "~> 0.1.0-rc.0"}
+    {:temple_phoenix, "~> 0.1"}
   ]
 end
 ```

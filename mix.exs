@@ -4,7 +4,7 @@ defmodule Temple.Phoenix.MixProject do
   def project do
     [
       app: :temple_phoenix,
-      version: "0.1.0",
+      version: "0.1.1",
       description: "Phoenix integration for Temple",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
