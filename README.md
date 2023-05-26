@@ -1,3 +1,6 @@
+> **Warning**
+> Phoenix 1.7 no longer uses Phoenix.View, so this package is no longer necessary.
+
 # Temple.Phoenix
 
 [Phoenix](https://github.com/phoenixframework/phoenix) integration for [Temple](https://github.com/mhanberg/temple).
