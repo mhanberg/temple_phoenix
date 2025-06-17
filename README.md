@@ -1,4 +1,4 @@
-> **Warning**
+> [!IMPORTANT]
 > Phoenix 1.7 no longer uses Phoenix.View, so this package is no longer necessary.
 
 # Temple.Phoenix
